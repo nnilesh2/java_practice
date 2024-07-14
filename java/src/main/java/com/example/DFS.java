@@ -3,6 +3,12 @@ package com.example;
 import java.util.ArrayDeque;
 import java.util.Deque;
 
+//        0
+//      / | \
+//    2   3  1
+//   /
+//  4
+//o/p : 0 2 4 3 1
 public class DFS {
     public static void main(String[] args) {
         // Graph representation using adjacency list
