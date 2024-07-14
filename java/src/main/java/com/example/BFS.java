@@ -10,10 +10,8 @@ import java.util.LinkedList;
 
 //o/p : 0 1 2 3 4
 public class BFS {
-    static LinkedList<Integer> queue = new LinkedList<>();
-    static boolean[] isVisted = new boolean[5];
+    
     public static void main(String[] args) {
-
         int[][] graph = {{1,2,3},
                          {},
                          {4},
@@ -23,6 +21,8 @@ public class BFS {
     
     }
     private static void performBFS(int[][] graph, int startingNode) {
+        LinkedList<Integer> queue = new LinkedList<>();
+        boolean[] isVisted = new boolean[graph.length];
 
         // Push starting node in queue
         queue.add(startingNode);
@@ -38,8 +38,8 @@ public class BFS {
                 //read the node 
                 System.out.print(currentNode+" ");
                 // add the children of current node in queue
-                for (int element : graph[currentNode]) {
-                    queue.add(element);
+                for (int neighbor : graph[currentNode]) {
+                    queue.add(neighbor);
                 }
             }
         }
