@@ -33,6 +33,8 @@ public class BFS {
             int currentNode = queue.poll();
             // check if the node is visited
             if(!isVisted[currentNode]){
+                //Mark the current node as visited 
+                isVisted[currentNode]=true;
                 //read the node 
                 System.out.print(currentNode+" ");
                 // add the children of current node in queue
