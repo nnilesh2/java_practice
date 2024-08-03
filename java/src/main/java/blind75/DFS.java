@@ -1,4 +1,4 @@
-package com.example;
+package blind75;
 
 import java.util.ArrayDeque;
 import java.util.Deque;

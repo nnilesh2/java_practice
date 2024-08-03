@@ -1,4 +1,4 @@
-package com.example;
+package blind75;
 
 //Given two numbers, hour and minutes, return the smaller angle (in degrees) formed between the hour and the minute hand
 
